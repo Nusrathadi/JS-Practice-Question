@@ -34,4 +34,28 @@ typeof undefined is undefined
 `let result = languages.lastIndexOf('S');` <br/>
 `console.log(result);`
 
+**Answer # 3 : Output of result**<br/>
+                   output of result will be **24** because **lastIndexOf** method returns index or position of last occurence of specified substring. The function returns -1 if the value is not found in the string or array
 
+            =========================================================================
+**Question # 4 : Guess the Output and Explain Why?**<br/>
+`let variable = 'hello programmers';`<br/>
+`let result = Number(variable);`<br/>
+`console.log(result);`
+
+**Answer # 4 : Output of result**<br/>
+                 output of result will be **NaN** because Number() method takes variable or expression as argument and convert it into number. If variable cannot be converted to valid number then the result will be NAN(Not a Number) so here variable is string which cannot be converted into number so result displayed **NaN** in console.
+
+            ===========================================================================
+**Question # 5: Guess the Output and Explain Why?**<br/>
+`let num1 = 32;`<br/>
+`let num2 = '32';`<br/>
+`let result1 = num1 !== num2;`<br/>
+`let result2 = num1 != num2;`<br/>
+`console.log(result1, result2);`
+
+**Answer # 5 : Output of result1 and result2**<br/>
+               **Output of result1 = true**<br/>
+	       **Output of result2 = false**
+                  
+ **output of result1** will be **true** and output of result2 will be **false** because when num1 is compared with num2 due to strict not equality operator it will check both number and datatype as num1 is Number and num2 is string so they are not equal so **true** will be shown in console while **output of result2** will display **false** in console because != will not check data type it only checks value of num1 and num2
