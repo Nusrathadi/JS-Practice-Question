@@ -257,3 +257,24 @@ My state population is ** Its traditional food is ** and historical place name i
 	                console.log(`My state population is ${pop} Its traditional food is ${food} and historical place name is ${place}`)
 	           }
 	       describeYourState("10,000" ,"biryani","Islamabad")
+
+              =========================================================================
+**Question # 20 : Create function addition which takes two numbers as an argument And return the result of sum of two numbers
+Important Note: In the function call you are not passing any parameter. You can modify function to achieve this.
+Example;**
+		
+		function addition(num1, num2) {
+		  return num1 + num2;
+		}
+		console.log(addition()); //You are not allowed to modify this line any more
+
+  **Answer # 20 :**
+
+       By assigning default values to parameters we can solve this like
+		
+		function addition(num1 =10 , num2 =26 ) {
+		  return num1 + num2;
+		}
+		console.log(addition());
+
+         
