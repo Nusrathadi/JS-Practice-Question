@@ -234,3 +234,26 @@ Write an if/else if statement to help john figure out Your country is right for 
 		let grade = "A"
 		let passingYear = 2019
 		grade === "A" ? (passingYear < 2020 ? console.log("Qualify") : console.log("Fail")) : console.log("Fail");
+
+                 ======================================================================
+**Question # 18 : Create a function Declaration called describeYourState Which take three parameters Population, traditional food and historical place. Based on this input function should return a String with this format.
+My state population is ** Its traditional food is ** and historical place name is ___**
+
+**Answer # 18 :**
+
+	     function describeYourState(pop,food,place)
+              {
+	        console.log(`My state population is ${pop} Its traditional food is ${food} and historical place name is ${place}`)
+	       }
+	     describeYourState("10,000" ,"biryani","Islamabad")
+
+              =========================================================================
+**Question # 19 :Create a function expression which does the exact same thing as defined in Question 18**
+
+**Answer # 19 :**
+	
+	            const describeYourState = (pop,food,place) =>
+	           {
+	                console.log(`My state population is ${pop} Its traditional food is ${food} and historical place name is ${place}`)
+	           }
+	       describeYourState("10,000" ,"biryani","Islamabad")
