@@ -277,4 +277,59 @@ Example;**
 		}
 		console.log(addition());
 
-         
+                 ===========================================================================
+**Question # 21 : Create higher order function named as transformer which take string and firstUpperCaseWord function as an arguments. firstUpperCaseWord is function which make first word UpperCase from a given String.**
+
+**Answer # 21 : 
+
+		    function transformer(string)
+                    {
+		       function firstUpperCaseWord(st)
+	                {
+			   let st1 = st.split(" ");
+			    st1[0] = st1[0].toUpperCase();
+			    st=st1.join(" ");
+			    return st;
+			 }
+			    console.log(firstUpperCaseWord(string));
+		    }
+			transformer("hello how are you");
+
+	           ===========================================================================
+**Question # 22 :create function which will display Your name after every 5 seconds**
+
+               input
+		let  yourName  =  "john";
+		output
+		
+		"john"  after  5  second
+		"john"  after  5  second
+		.
+		.
+		.
+		and  so  on.
+
+  **Answer # 22: 
+
+                 let name="john"
+
+		function showName(){
+		    console.log(name)
+		}
+		setInterval(showName,5000)
+
+           ===========================================================================
+**Question # 23: Guess the Output And Explain Why?**
+
+		let arrowFunction = (name = 'Coders') => {
+		  `Welcome ${name}`;
+		};
+		
+		console.log(arrowFunction('Programmers'));
+
+**Answer # 23:  Output** 
+
+         arrow function does not have an explicit return statement, and it uses template literals without a return keyword. Therefore, the function will return **undefined**. When you call arrowFunction('Programmers'), it logs undefined to the console.   
+
+        =====================================================================================
+**Question # 24 :
